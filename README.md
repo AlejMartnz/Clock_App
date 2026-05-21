@@ -24,7 +24,7 @@ This project is authored with performance and clean code isolation in mind, util
 * **Vanilla ES6+ Modules:** Code is organized into cleanly decoupled, single-responsibility files imported natively by the browser.
 
 ### 📂 File Structure
-
+```text
 Clock_App/
 ├── index.html            # Main application structure and DOM nodes
 ├── css/
@@ -36,7 +36,7 @@ Clock_App/
     ├── chronometer.js    # Performance-stamp driven stopwatch module
     ├── countdown_timer.js# Dynamic timer control systems
     └── animations.js     # Throttled Web Animation API engine
-
+```
 ## 🚀 Performance Optimizations
 
 Unlike basic tutorials that leverage primitive loops, this app is built for production environments:
