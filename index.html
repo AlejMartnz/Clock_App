@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clock App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="app-header">
+        <h1>Clock App</h1>
+
+        <nav class="tab-nav">
+          <button class="tab-button active" data-section="clock-section">
+            Clock
+          </button>
+          <button class="tab-button" data-section="chronometer-section">
+            Chronometer
+          </button>
+          <button class="tab-button" data-section="countdown-section">
+            Timer
+          </button>
+        </nav>
+      </header>
+
+      <main class="app-main">
+        <!-- Section 1: Clock -->
+        <section id="clock-section" class="panel active">
+          <h2>Digital Clock</h2>
+          <div id="clock-display" class="time-display">00:00:00</div>
+          <p id="clock-date" class="subtext">Loading date...</p>
+        </section>
+
+        <!-- Section 2: Chronometer -->
+        <section id="chronometer-section" class="panel">
+          <h2>Chronometer</h2>
+          <div id="chronometer-display" class="time-display">00:00:00:000</div>
+
+          <div class="timer-controls">
+            <button id="start-btn">Start</button>
+            <button id="pause-btn">Pause</button>
+            <button id="reset-btn">Reset</button>
+          </div>
+        </section>
+
+        <!-- Section 3: Timer (Moved inside main) -->
+        <section id="countdown-section" class="panel">
+          <h2>Timer</h2>
+
+          <div class="countdown-inputs">
+            <div class="input-group">
+              <label for="minutes-input">Minutes</label>
+              <input
+                id="minutes-input"
+                type="number"
+                min="0"
+                step="1"
+                value="1"
+              />
+            </div>
+
+            <div class="input-group">
+              <label for="seconds-input">Seconds</label>
+              <input
+                id="seconds-input"
+                type="number"
+                min="0"
+                step="1"
+                value="30"
+              />
+            </div>
+          </div>
+
+          <div id="countdown-display" class="time-display">01:30:000</div>
+
+          <div class="timer-controls">
+            <button id="countdown-start-btn">Start</button>
+            <button id="countdown-pause-btn">Pause</button>
+            <button id="countdown-reset-btn">Reset</button>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
