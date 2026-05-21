@@ -25,7 +25,6 @@ This project is authored with performance and clean code isolation in mind, util
 
 ### 📂 File Structure
 
-```text
 Clock_App/
 ├── index.html            # Main application structure and DOM nodes
 ├── css/
